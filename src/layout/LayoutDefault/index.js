@@ -28,6 +28,9 @@ function LayoutDefault() {
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <NavLink to="/info-user" aria-label="InfoUser">InfoUser</NavLink>
+                        </li>
                     </ul>
                 </nav>
             </header>
