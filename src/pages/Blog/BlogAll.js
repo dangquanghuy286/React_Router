@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function BlogAll() {
     const [posts, setpost] = useState([]);
@@ -14,10 +15,14 @@ function BlogAll() {
 
     return (
         <>
+            <h1>Tin nóng</h1>
             <ul>
                 {posts.map(item => (
                     <li key={item.id}>
-                        {item.title}
+
+                        <Link to={"/blog/" + item.id}>
+                            {item.title}
+                        </Link>
 
                     </li>
 
